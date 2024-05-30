@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Quiz</title>
+</head>
+
+<body>
+  <form data-js="quiz-form" class="box container mt-6">
+    <div data-js="user-score-container" class="is-hidden">
+      <h1 data-js="user-score" class="has-text-centered subtitle is-1"><span></span> pontos</h1>
+      <progress data-js="score-progress-bar" class="progress is-large is-success mx-auto w-75" value="0"
+        max="100">0%</progress>
+    </div>
+    <h3 class="title is-3 has-text-centered mt-6">2 somado a 2?</h3>
+    <div class="field">
+      <div class="control is-flex is-flex-direction-column">
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion1" value="A" checked>
+          4
+        </label>
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion1" value="B">
+          6
+        </label>
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion1" value="C">
+          7
+        </label>
+      </div>
+    </div>
+    <h3 class="title is-3 has-text-centered mt-6">Subtraido por 1?</h3>
+    <div class="field">
+      <div class="control is-flex is-flex-direction-column">
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion2" value="A" checked>
+          2
+        </label>
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion2" value="B">
+          5
+        </label>
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion2" value="C">
+          3
+        </label>
+      </div>
+    </div>
+    <h3 class="title is-3 has-text-centered mt-6">Multiplicado por 5</h3>
+    <div class="field">
+      <div class="control is-flex is-flex-direction-column">
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion3" value="A" checked>
+          21
+        </label>
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion3" value="B">
+          12
+        </label>
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion3" value="C">
+          15
+        </label>
+      </div>
+    </div>
+    <h3 class="title is-3 has-text-centered mt-6">Dividido por 3</h3>
+    <div class="field">
+      <div class="control is-flex is-flex-direction-column">
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion4" value="A" checked>
+          3
+        </label>
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion4" value="B">
+          5
+        </label>
+        <label class="radio my-1 mx-auto w-50 ml-0">
+          <input type="radio" name="inputQuestion4" value="C">
+          7
+        </label>
+      </div>
+    </div>
+    <button class="is-flex is-medium button mx-auto">Calculate</button>
+  </form>
+  <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
