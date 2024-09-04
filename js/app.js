@@ -3,12 +3,14 @@ const quizForm = document.querySelector('[data-js="quiz-form"]')
 const handleFormSubmit = async e => {
   e.preventDefault()
 
-  const { incrementUserScore } = await import('./incrementUserScore.js')
-  const { animateUserScore } = await import('./animateUserScore.js')
-  const { resetScreenPosition } = await import('./resetScreenPosition.js')
-  const { showUserScoreContainer } = await import('./showUserScoreContainer.js')
+  const {
+    showUserScore,
+    resetScreenPosition,
+    incrementUserScore,
+    animateUserScore
+  } = await import('./handleUserScore.js')
 
-  showUserScoreContainer()
+  showUserScore()
   resetScreenPosition()
   incrementUserScore(e)
   animateUserScore()

@@ -1,7 +1,5 @@
 let userScore = 0
 
-const getUserScore = () => userScore
-const updateUserScore = value => userScore += value
-const resetUserScore = () => userScore = 0
-
-export { getUserScore, updateUserScore, resetUserScore }
+export const getUserScore = () => userScore
+export const sumUserScore = value => userScore += value
+export const resetUserScore = () => userScore = 0
