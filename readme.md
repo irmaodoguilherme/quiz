@@ -7,9 +7,7 @@
 
 **<h1 id="introdução">Quiz</h1>**
 
-Uma lista de tarefas simples, criada com JavaScript puro.
-
-Você pode usá-la tanto para acompanhar o que precisa ser feito quanto para verificar o que já foi feito. Além disso, pode utilizá-la para outros tipos de coisas, como listar o que precisa comprar ou o que precisa guardar.
+Um quiz de matemática simples, criado com JavaScript puro.
 
 <h2 id="como-acessar">Como acessar</h2>
 
